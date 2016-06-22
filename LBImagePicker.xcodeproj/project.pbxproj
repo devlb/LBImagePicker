@@ -15,6 +15,7 @@
 		0AD29A551D1A71E10021E7D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD29A531D1A71E10021E7D9 /* LaunchScreen.storyboard */; };
 		0AD29A601D1A71E10021E7D9 /* LBImagePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD29A5F1D1A71E10021E7D9 /* LBImagePickerTests.m */; };
 		0AD29A6B1D1A71E10021E7D9 /* LBImagePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD29A6A1D1A71E10021E7D9 /* LBImagePickerUITests.m */; };
+		0AD29A7A1D1A72060021E7D9 /* LBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD29A791D1A72060021E7D9 /* LBImagePickerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0AD29A661D1A71E10021E7D9 /* LBImagePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBImagePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD29A6A1D1A71E10021E7D9 /* LBImagePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBImagePickerUITests.m; sourceTree = "<group>"; };
 		0AD29A6C1D1A71E10021E7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD29A781D1A72060021E7D9 /* LBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBImagePickerController.h; sourceTree = "<group>"; };
+		0AD29A791D1A72060021E7D9 /* LBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBImagePickerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		0AD29A441D1A71E10021E7D9 /* LBImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				0AD29A781D1A72060021E7D9 /* LBImagePickerController.h */,
+				0AD29A791D1A72060021E7D9 /* LBImagePickerController.m */,
 				0AD29A481D1A71E10021E7D9 /* AppDelegate.h */,
 				0AD29A491D1A71E10021E7D9 /* AppDelegate.m */,
 				0AD29A4B1D1A71E10021E7D9 /* ViewController.h */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					0AD29A411D1A71E10021E7D9 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5BMEMFQGUN;
 					};
 					0AD29A5A1D1A71E10021E7D9 = {
 						CreatedOnToolsVersion = 7.3;
@@ -273,6 +279,7 @@
 				0AD29A4D1D1A71E10021E7D9 /* ViewController.m in Sources */,
 				0AD29A4A1D1A71E10021E7D9 /* AppDelegate.m in Sources */,
 				0AD29A471D1A71E10021E7D9 /* main.m in Sources */,
+				0AD29A7A1D1A72060021E7D9 /* LBImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LBImagePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = top.52app.LBImagePicker;
+				PRODUCT_BUNDLE_IDENTIFIER = top.52app.hahaPod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -426,10 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LBImagePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = top.52app.LBImagePicker;
+				PRODUCT_BUNDLE_IDENTIFIER = top.52app.hahaPod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
